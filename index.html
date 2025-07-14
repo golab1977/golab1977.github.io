@@ -14,21 +14,21 @@
     }
 
 header {
+  width: 100%;               /* pełna szerokość */
+  height: 150px;             /* stała wysokość */
   background-image: url('unnamed.png'); 
-  background-size: cover;
+  background-size: cover;    /* rozciąga obraz na całą szerokość i wysokość */
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 20px 20px;        /* zmniejszamy padding, żeby zmieścić w 150px */
+  padding: 20px;
   text-align: center;
   position: relative;
-  max-height: 150px;         /* maksymalna wysokość nagłówka */
-  height: 150px;             /* wymuszamy wysokość */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;          /* jeśli coś wyjdzie poza nagłówek, ukryj */
+  overflow: hidden;
 }
 
 header h1, header p {
