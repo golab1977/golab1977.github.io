@@ -19,20 +19,28 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px; /* więcej paddingu, żeby było miejsce */
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* ustaw wysokość nagłówka */
 }
 
-header h1, header p {
-  background-color: transparent !important; /* usuń tło */
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 10px;
-  margin: 15px 0;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
-  font-weight: bold;
-  letter-spacing: 0.05em;
+header h1 {
+  font-size: 4rem;  /* bardzo duży nagłówek */
+  margin: 0 0 20px 0; /* odstęp pod nagłówkiem */
+  font-weight: 700;
+  text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+}
+
+header p {
+  font-size: 1.8rem;  /* większy niż wcześniej */
+  margin: 0;
+  font-weight: 500;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
     nav {
